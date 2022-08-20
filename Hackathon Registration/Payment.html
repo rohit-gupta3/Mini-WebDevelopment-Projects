@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon | Payment</title>
+    <style>
+    a{
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+    }
+    a:hover {
+    background-color: #ddd;
+    color: black;
+    }
+
+    .previous {
+        background-color: #f1f1f1;
+        color: black;
+    }
+    form{
+        border:rgb(34, 8, 112); border-width:5px; border-style:solid;
+    }
+    h1{
+        font-size:30px;
+        font-family: italic;
+        text-decoration: underline;
+        text-align:left;
+        color: red;
+    }
+    </style>
+</head>
+<body>
+    <center>
+    <form>
+        <h1>HACK-THE-ASSESMENT 2022</h1>
+        <h2>Payment</h2>
+        <p>Card Type:
+            <select name="Card_type" id="Card_type">
+                <option value="">--Select a Card Type</option>
+                <option value="Visa">Visa</option>
+                <option value="rupay">rupay</option>
+                <option value="mastercard">mastercard</option>
+            </select>
+        </p>
+        <p>Bank Name:
+            <select name="card_type" id="bank">
+                <option value="">--Bank</option>
+                <option value="Indian">Indian</option>
+                <option value="SBI">SBI</option>
+                <option value="HDFC">HDFC</option>
+            </select>
+        </p>
+        <p>
+            Card Number <input type="number" name="card_number" id="card_number">
+        </p>
+        <p>
+            Expiration Date <input type="date" name="exp_date" id="exp_date">
+        </p>
+        <p>CVV <input type="password" name="cvv" id="cvv"></p>
+        
+        <a href="Team_Members.html" class="previous">&laquo; Previous</a>
+        <input type="submit" value="Submit">
+    </form>
+    </center>
+</body>
+</html>
