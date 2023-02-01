@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="form.js"></script>
+    <title>LIFE Insurance Company</title>
+</head>
+<body>
+        <h1 style="text-align: center;">Life Insurance REGISTRATION FORM</h1>
+        <form name="RegForm" onsubmit="return validate()" method="get" >
+             
+        <p>First Name: <input type="text" size="40" name="firstname" /></p>
+        <p>Last Name: <input type="text" size="40" id="lastname"></p>     
+        <b> Enter Date of Birth: <input type="date" id = "DOB"> </b>  
+        <span id = "message" style="color:red"> </span> <br><br>     
+        <button type="button" onclick = "ageCalculator()"> Calculate age </button> <br>
+        <h3 style="color:32A80F" id="result" align="center"></h3> 
+        <p>Telephone : <input type="text" size="40" name="Telephone" r/></p>
+        <p>E-mail : <input type="text" size="40" name="EMail" /></p>
+        <p>Password : <input type="password" size="40" name="Password" /></p>
+        <p>Address : <input type="text" size="40" name="Address" /></p>
+        <p>Aadhar Card No : <input type="text" size="40" name="aadhar"></p>
+        <p>
+            Your Insurance Policy :
+                <select type="text" name="Subject">
+                    <option value="">Choose any option</option>
+                    <option value="LifeInsurance">Life Insurance</option>
+                    <option value="NonLife">Non Life Insurance</option>
+                    <option value="Health">Health Insurance</option>
+                    <option value="miscellaneous">Miscellaneous Insurance</option>
+                </select></p>
+        <p>Policy for :
+            <select type="text" name="Subject1">
+                <option value="">Choose any option</option>
+                <option value="self">Self</option>
+                <option value="family">Family Member</option>
+                <option value="whole">Whole Family</option>
+                <option value="others">Others</option>
+            </select></p>
+        <p><input type="submit" value="Submit" name="Submit"  />
+        <input type="reset" value="Reset" name="Reset" /></p>
+        </form>
+    
+</body>
+</html>
